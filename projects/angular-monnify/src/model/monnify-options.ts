@@ -64,6 +64,10 @@ export interface MonnifyOptions {
    * When you need to pass extra data to the API.
    */
   metadata?: object;
+  /**
+   * The unique reference for the sub account that should receive the split.
+   */
+  subAccountCode?: string;
 }
 
 export interface MonnifySplitOptions {

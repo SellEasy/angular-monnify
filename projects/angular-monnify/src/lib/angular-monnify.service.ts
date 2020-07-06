@@ -44,7 +44,7 @@ export class AngularMonnifyService {
     if (!obj.apiKey && !this.apiKey) {
       return 'ANGULAR-Monnify: Please insert a your apiKey';
     }
-    if (!obj.contractCode) {
+    if (!obj.contractCode && !this.contractCode) {
       return 'ANGULAR-Monnify: Monnify contractCode cannot be empty';
     }
     if (!obj.customerEmail) {
@@ -79,6 +79,7 @@ export class AngularMonnifyService {
       paymentDescription: obj.paymentDescription || '',
       redirectUrl: obj.redirectUrl || '',
       metadata: obj.metadata || {},
+      subAccountCode: obj.subAccountCode,
       incomeSplitConfig: obj.incomeSplitConfig || null
     };
     return this.clean(monnifyOptions);

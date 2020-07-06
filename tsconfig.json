@@ -6,6 +6,7 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -16,8 +17,21 @@
       "dom"
     ]
   },
+  "typeRoots": [
+    "node_modules/@types"
+  ],
+  "paths": {
+    "angular-monnify": [
+      "dist/angular-monnify"
+    ],
+    "angular-monnify/*": [
+      "dist/angular-monnify/*"
+    ]
+  },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
-  }
+    "strictInjectionParameters": true,
+    "enableIvy":false
+  },
+  
 }
