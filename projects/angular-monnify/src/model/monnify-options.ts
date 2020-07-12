@@ -8,11 +8,11 @@ export interface MonnifyOptions {
   /**
    * Merchant's API Key (Can be found on the Monnify dashboard)
    */
-  apiKey: string;
+  apiKey?: string;
   /**
    * Merchant's contract code (Can be found on the Monnify dashboard)
    */
-  contractCode: string;
+  contractCode?: string;
   /**
    * The amount to be paid by the customer
    */
